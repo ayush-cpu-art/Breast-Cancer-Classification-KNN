@@ -1,57 +1,91 @@
-# 🩺 Breast Cancer Classification using KNN
-
-A machine learning classification project that uses the K-Nearest Neighbors (KNN) algorithm to classify breast tumors as benign or malignant.
+# 🩺 Breast Cancer Classification using K-Nearest Neighbors (KNN)
 
 ## 📌 Overview
 
-This project implements an end-to-end machine learning workflow for breast cancer classification using the Wisconsin Diagnostic Breast Cancer dataset.
+This project implements a **K-Nearest Neighbors (KNN)** classification model to classify breast tumors as **Malignant (M)** or **Benign (B)** using the Breast Cancer Wisconsin Diagnostic Dataset.
 
-The workflow includes data preprocessing, feature standardization, KNN model training, and evaluation using multiple classification metrics.
+Feature standardization is applied before training because KNN relies on distance calculations between data points.
 
-## 🎯 Objectives
+---
 
-- Load and explore the breast cancer dataset
-- Analyze dataset structure and target distribution
-- Handle unnecessary columns
-- Encode the target variable
-- Split the data using stratified sampling
-- Standardize numerical features
-- Train a KNN classifier
-- Evaluate the model using classification metrics and a confusion matrix
+## 🎯 Objective
+
+- Explore the breast cancer dataset.
+- Perform data preprocessing and exploratory analysis.
+- Handle unnecessary columns.
+- Encode the target variable.
+- Standardize numerical features.
+- Train a KNN classifier.
+- Evaluate the classification performance using multiple metrics.
+
+---
 
 ## 📊 Dataset
 
-The dataset contains **569 samples** and 30 numerical features describing characteristics of cell nuclei.
+**Dataset:** Breast Cancer Wisconsin Diagnostic Dataset
 
-### Target Variable
+The dataset contains **569 samples** and **30 numerical features** used for classification.
 
-`diagnosis`
+### Target Classes
 
-| Value | Meaning |
-|---|---|
-| `B` | Benign |
-| `M` | Malignant |
+- **M** → Malignant
+- **B** → Benign
 
-Class distribution:
+---
 
-- Benign: **357**
-- Malignant: **212**
+## 🛠️ Technologies Used
 
-The `id` column and an empty `Unnamed: 32` column were removed before model training.
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook
+
+---
 
 ## ⚙️ Methodology
 
-### 1. Data Preparation
+1. Load the dataset.
+2. Perform exploratory data analysis.
+3. Check for missing values.
+4. Remove unnecessary columns.
+5. Encode the target variable.
+6. Split the dataset into training and testing sets using an 80:20 split.
+7. Standardize the features using `StandardScaler`.
+8. Train a KNN classifier with **K = 5**.
+9. Evaluate the model using Accuracy, Precision, Recall, F1-Score, and Confusion Matrix.
+10. Visualize the model performance.
 
-- Loaded the dataset using Pandas
-- Inspected dataset shape and data types
-- Checked for missing values
-- Removed unnecessary columns
+---
 
-### 2. Target Encoding
+## 🤖 KNN Configuration
 
-The diagnosis labels were encoded as:
+| Parameter | Value |
+|---|---|
+| Algorithm | K-Nearest Neighbors |
+| Number of Neighbors (K) | 5 |
+| Feature Scaling | StandardScaler |
+| Train/Test Split | 80/20 |
+
+---
+
+## 📈 Results
+
+The KNN model achieved the following performance on the test dataset:
+
+| Metric | Score |
+|---|---:|
+| Accuracy | 95.61% |
+| Precision | 97.44% |
+| Recall | 90.48% |
+| F1-Score | 93.83% |
+
+### Confusion Matrix
 
 ```text
-B → 0
-M → 1
+                 Predicted
+              B          M
+Actual B     71          1
+Actual M      4         38
