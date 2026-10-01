@@ -1,6 +1,6 @@
-# 🩺 Breast Cancer Classification using K-Nearest Neighbors (KNN)
+#  Breast Cancer Classification using K-Nearest Neighbors (KNN)
 
-## 📌 Overview
+##  Overview
 
 This project implements a **K-Nearest Neighbors (KNN)** classification model to classify breast tumors as **Malignant (M)** or **Benign (B)** using the Breast Cancer Wisconsin Diagnostic Dataset.
 
@@ -8,7 +8,7 @@ Feature standardization is applied before training because KNN relies on distanc
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 - Explore the breast cancer dataset.
 - Perform data preprocessing and exploratory analysis.
@@ -20,7 +20,7 @@ Feature standardization is applied before training because KNN relies on distanc
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 **Dataset:** Breast Cancer Wisconsin Diagnostic Dataset
 
@@ -33,7 +33,7 @@ The dataset contains **569 samples** and **30 numerical features** used for clas
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - Python
 - NumPy
@@ -45,7 +45,7 @@ The dataset contains **569 samples** and **30 numerical features** used for clas
 
 ---
 
-## ⚙️ Methodology
+##  Methodology
 
 1. Load the dataset.
 2. Perform exploratory data analysis.
@@ -60,7 +60,7 @@ The dataset contains **569 samples** and **30 numerical features** used for clas
 
 ---
 
-## 🤖 KNN Configuration
+##  KNN Configuration
 
 | Parameter | Value |
 |---|---|
@@ -71,7 +71,7 @@ The dataset contains **569 samples** and **30 numerical features** used for clas
 
 ---
 
-## 📈 Results
+##  Results
 
 The KNN model achieved the following performance on the test dataset:
 
